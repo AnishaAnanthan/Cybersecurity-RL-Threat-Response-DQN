@@ -76,6 +76,3 @@ The model uses 10 important features such as:
 - PyTorch
 - Streamlit
 
----
-
-## 📁 Project Structure
