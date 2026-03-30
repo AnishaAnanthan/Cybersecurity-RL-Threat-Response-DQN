@@ -76,3 +76,54 @@ The model uses 10 important features such as:
 - PyTorch
 - Streamlit
 
+## 📁 Project Structure
+
+project/
+│
+├── app/
+│ └── app.py # Streamlit UI
+│
+├── env/
+│ ├── init.py
+│ └── cyber_env.py # RL Environment
+│
+├── train/
+│ ├── init.py
+│ └── train_dqn.py # Training Script
+│
+├── test/
+│ ├── init.py
+│ └── test_model.py # Model Testing
+│
+├── dataset/
+│ └── data.csv # Dataset
+│
+├── requirements.txt
+└── README.md
+
+
+---
+
+## How to Run
+
+### 1️ Install dependencies
+```bash
+pip install -r requirements.txt
+
+### 2️ Train the model
+python -m train.train_dqn
+
+### 3️ Run the application
+streamlit run app/app.py
+
+## Results
+Model predicts multiple different actions
+Avoids bias toward a single output
+Provides confidence scores and explanations
+Works for both normal and suspicious inputs
+
+## Future Scope
+Real-time network traffic integration
+Advanced intrusion detection systems
+Deployment in cloud environments
+Use of real labeled cybersecurity datasets
